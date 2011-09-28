@@ -6,6 +6,6 @@ git cloneした後、リポジトリ内の他のブランチをpullする時は
 
 例えば、リモートにあるgh-pagesというブランチをローカルのtestというブランチに持ってきたいときはこう。
 
-    $ git pull gh-pages:test
+    $ git pull origin gh-pages:test
 
 
