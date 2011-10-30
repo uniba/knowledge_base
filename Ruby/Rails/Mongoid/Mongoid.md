@@ -32,14 +32,14 @@ class Version
   include Mongoid::Document
   include Mongoid::Timestamps
 
-  # 時刻情報は失なわれるが、日付は TimeZone に従った値となる
   field :d_field, :type => Date
+  # 時刻情報は失なわれるが、日付は TimeZone に従った値となる
 
-  # なぜか常に UTC 扱い
   field :dt_field, :type => DateTime
+  # なぜか常に UTC 扱い
 
-  # TimeZone に従った値となる
   field :t_field, :type => Time
+  # TimeZone に従った値となる
 end
 ~~~
 
