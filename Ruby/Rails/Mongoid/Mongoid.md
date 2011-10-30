@@ -6,14 +6,14 @@
 検索して出た #878: Mongoid ignores Time.zone also with use_utc: true (2.0.1 and master) - Issues - mongoid/mongoid - GitHub [https://github.com/mongoid/mongoid/issues/878]
 上記の情報を参照して、Mongoid の設定ファイル mongoid.yml に
 
-//
+// Ruby
 use_utc: false
 use_activesupport_time_zone: true
 ~~~
 
 
 同様に、各環境の設定ファイルに
-//
+// Ruby
 config.time_zone = "Tokyo"
 ~~~
 
@@ -27,7 +27,7 @@ field のデータ型を指定をする際、下記の3カラムを選択する�
 
 このうち、DateTime を使うと TimeZone の設定が読まれないらしく、常に UTC でデータが帰ってくるようになっていた。
 
-//
+// Ruby
 class Version
   include Mongoid::Document
   include Mongoid::Timestamps
