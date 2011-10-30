@@ -5,6 +5,7 @@
 ということになっているらしい
 
 [#878: Mongoid ignores Time.zone also with use_utc: true (2.0.1 and master) - Issues - mongoid/mongoid - GitHub](https://github.com/mongoid/mongoid/issues/878)
+
 上記の情報を参照して、Mongoid の設定ファイル mongoid.yml に
 
     use_utc: false
@@ -16,6 +17,7 @@
 
 という記述をしてみたが、これだけでは充分ではない。こちらにある通り
 [#1135: No timezone conversion for DateTime fields? - Issues - mongoid/mongoid - GitHub](https://github.com/mongoid/mongoid/issues/1135)
+
 field のデータ型を指定をする際、下記の3カラムを選択する事になるが
 
 * Date
