@@ -3,8 +3,7 @@
 >MongoDB は、日付データをエポックからの経過ミリ秒数で格納します。 つまり、日付にはタイムゾーンの情報が 含まれないということです。 タイムゾーンが必要なら、別のフィールドを用意する必要があります。 また、データベースとの間でドキュメントをやりとりすると、 ミリ秒より細かい単位の情報は失われてしまいます。
 ということになっているらしい
 
-#878: Mongoid ignores Time.zone also with use_utc: true (2.0.1 and master) - Issues - mongoid/mongoid - GitHub [https://github.com/mongoid/mongoid/issues/878]
-
+検索して出た #878: Mongoid ignores Time.zone also with use_utc: true (2.0.1 and master) - Issues - mongoid/mongoid - GitHub [https://github.com/mongoid/mongoid/issues/878]
 上記の情報を参照して、Mongoid の設定ファイル mongoid.yml に
 
 //
@@ -18,10 +17,8 @@ use_activesupport_time_zone: true
 config.time_zone = "Tokyo"
 ~~~
 
-という記述をしてみたが、これだけでは充分ではない。 下記 URL にある通り
-
-#1135: No timezone conversion for DateTime fields? - Issues - mongoid/mongoid - GitHub [https://github.com/mongoid/mongoid/issues/1135]
-
+という記述をしてみたが、これだけでは充分ではない。
+こちらの URL にある通り #1135: No timezone conversion for DateTime fields? - Issues - mongoid/mongoid - GitHub [https://github.com/mongoid/mongoid/issues/1135]
 field のデータ型を指定をする際、下記の3カラムを選択する事になるが
 
 *Date
