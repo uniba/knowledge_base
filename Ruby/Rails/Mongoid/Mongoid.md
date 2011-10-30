@@ -15,7 +15,8 @@
 
     config.time_zone = "Tokyo"
 
-という記述をしてみたが、これだけでは充分ではない。こちらにある通り
+という記述をしてみたが、これだけでは充分ではない。下記 URL にある通り
+
 [#1135: No timezone conversion for DateTime fields? - Issues - mongoid/mongoid - GitHub](https://github.com/mongoid/mongoid/issues/1135)
 
 field のデータ型を指定をする際、下記の3カラムを選択する事になるが
