@@ -15,3 +15,17 @@ GitHub for Macだけで管理していくならあまり問題にならなさそ
 ちなみにGitHub for Macのバージョンは1.0.6。新しいやつで治ってるかは知らない。  
   
 hideyukisaito
+
+=========
+
+追記
+--------
+
+GitHub for Mac の .git/config の origin のリポジトリ URL が https プロトコルになっているのが原因っぽいです。
+git プロトコルに変更するとコマンドライン経由でも鍵認証で push/pull 出来るようになりました。
+
+http://null.ly/post/15822446389/github-for-mac-clone-repository-username?ref=nf
+
+ちなみに現時点最新版の GitHub for Mac でも https で clone してしまうようです。
+
+Seiya Konno
